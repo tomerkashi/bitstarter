@@ -27,6 +27,21 @@
             border-left: 1px white solid;
         }
       }
+      
+      /*landscape phones*/
+      @media (max-width: 480px) {
+        .copy
+        {
+            padding: 2.5% 10%;
+        }
+        .linediv-l {
+            border-bottom: 1px white solid;
+        }
+        .linediv-l {
+            border-top: 1px white solid;
+        }
+      }
+      /*All form factors*/
                 
         body {
             font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -45,11 +60,13 @@
             font-size: 18px;
             line-height: 24px;
         }
+        
+        /* Video pitch and action */
         .pitch
         {
             padding: 2.5% 0%;
         }
-        .orderd
+        .order
         {
             padding: 2% 0%;
         }
@@ -70,19 +87,6 @@
             padding: 10px 0px 10px 0px;
         }
         
-        .video {
-            /*ignored*/
-            height: 124px;
-            line-height: 124px;
-            }
-            .thermometerm .order,. social {
-            /*ignored*/
-            height: 40px;
-            line-height: 40px;
-            }
-            div.row {
-                border: 1px solid;
-            }
         </style>
     </head>
     <body>
@@ -105,30 +109,52 @@
         </div>
       </div>
     </div>
-    
-    <div class="row-fluid heading">
-        <div class="span12">
-        <h1>Product</h1>
+
+    <div class="container">
+        <div class="row-fluid heading">
+            <div class="span12">
+            <h1>Product</h1>
+            </div>
         </div>
-    </div>
-    
     <div class="row-fluid subheading">
         <div class="span12">
         <p class="lead">Yo yo description.</p>
         </div>
     </div>
-    
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-        <img class="img-polaroid" src="http://placehod.it/480x300">
+        <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
       <!-- things should be inserted here-->  
     </div>
         
+    <div class="span5 actions">
+        <div class="span8 offset2">
+            <div class="statistics">
+                <div class="span4">
+                    <div class="linediv-l">
+                    <h3>1000</h3> <p>backers</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="linediv-c">
+                    <h3>$6000</h3> <p>of $10,000</p>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="linediv-r">
+                    <h3>10</h3> <p>days left</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span10 offset1">
+            <div class="thermometer progress active">
+                <div class=bar bar-success" style="width: 60%;"></div>
+                <div class=bar bar-warning" style="width: 40%;"></div>
+            </div>
+        </div>
     
-    
-    
-    <div class="container">
         <div class="row navigation">
             <div class="span2 logo">
             Logo
