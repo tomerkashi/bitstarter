@@ -21,6 +21,12 @@ app.get('/fast_signup.jpg', function(request, response) {
   response.send(buffer);
 });
 
+app.get('/qrcode.png', function(request, response) {
+  console.log("got key")
+  var buffer  = fs.readFileSync("qrcode.png")
+  response.send(buffer);
+});
+
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
